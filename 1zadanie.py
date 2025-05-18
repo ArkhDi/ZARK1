@@ -14,12 +14,12 @@ if os.path.exists("results")==False:
 with open("results/data.txt", "w") as file:
   for i in range(len(x)):
     file.write(f"{x[i]:.4f}    {y[i]:.4f}\n") 
-print("данные сохранены в файл data.txt")
+print("data saved in data.txt")
 
 
 plt.plot(x, y)
 plt.xlabel("x")
 plt.ylabel("f(x)")
-plt.title("График функции f(x) = -20*e**(-0.2*(0.5*x*x)**0.5)-e**(0.5*(cos(2*pi*x)+1))+e+20")
+plt.title("grap of f(x) = -20*e**(-0.2*(0.5*x*x)**0.5)-e**(0.5*(cos(2*pi*x)+1))+e+20")
 plt.grid(True)
 plt.show()
